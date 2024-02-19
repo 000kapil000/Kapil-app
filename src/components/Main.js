@@ -13,13 +13,13 @@ console.log(text);
     baseURL: "https://jsonplaceholder.typicode.com/posts"
   });
   const fetchProducts = async () => {
-    // setLoading(true)
+    setLoading(true)
 
 
     const res = await LogPost.get('?_limit=100')
     const data = await res.data
-    // await new Promise((resolve) => setTimeout(resolve, 5000));
-    // setLoading(false)
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    setLoading(false)
     setProducts(data)
     console.log(data);
   }

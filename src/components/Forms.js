@@ -61,6 +61,7 @@ function Forms({onClose}) {
     
   return (
     <div className='form-overlay'>
+ <button onClick={onClose} className='closed'>close ❌</button>
          <form className="form" onSubmit={handleSubmit}>
       <div>
         <label>First Name:</label>

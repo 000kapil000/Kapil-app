@@ -63,7 +63,7 @@ text-align: center;
     width: 60%; /* Cover 60% of width */
     background-color:white; /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Blur overlay for aesthetics */
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     z-index: 100; /* Ensure form is on top */
@@ -81,4 +81,7 @@ text-align: center;
   .error{
     color: red;
   }
-  
+  .closed{
+    background-color: aquamarine;
+    width: 80px; 
+  }
