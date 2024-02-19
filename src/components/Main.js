@@ -51,8 +51,9 @@ console.log(text);
 
               products.slice(page * 6 - 6, page * 6).map((items) => {
                 return (
-                  <span className='products__single' key={items.id}> <p className='deletIcon' onClick={() => { DeletPost(items.id) }}>❌</p>{items.title}
-                    {/* <img src={smile} alt={items.id} /> */}
+                  
+                  <span className={text} key={items.id}> <p className='deletIcon' onClick={() => { DeletPost(items.id) }}>❌</p>{items.title}
+                
                     <span>{items.body}</span>
                   </span>
                 

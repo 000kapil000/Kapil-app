@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   
-  .products__single {
+  .grid {
     height: 250px;
     list-style: none;
     padding: 20px;
@@ -15,6 +15,11 @@
     text-align: center;
     border-radius: 5px;
     cursor: pointer; /* Imp on clickables */
+  }
+  .list{
+  
+    border-radius: 5px;
+
   }
   
 
