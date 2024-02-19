@@ -46,13 +46,13 @@ console.log(text);
     <div>
       {
         loading ? (<div class="loader"></div>) : (
-          products.length > 0 && <div className='products'>
+          products.length > 0 && <div className={text}>
             {
 
               products.slice(page * 6 - 6, page * 6).map((items) => {
                 return (
                   
-                  <span className={text} key={items.id}> <p className='deletIcon' onClick={() => { DeletPost(items.id) }}>❌</p>{items.title}
+                  <span className="products__single" key={items.id}> <p className='deletIcon' onClick={() => { DeletPost(items.id) }}>❌</p>{items.title}
                 
                     <span>{items.body}</span>
                   </span>

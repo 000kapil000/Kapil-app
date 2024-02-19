@@ -37,14 +37,16 @@ function SideBare() {
  <div className="toggle-container">
  <h1 className='toggle-h'>View Toggle</h1>
       <button
-        className={`toggle-button ${selectedButton === 'list' ? 'active' : ''}`}
-        onClick={() => handleClick('list')}
+         className={`toggle-button ${selectedButton === 'grid' ? 'active' : ''}`}
+         onClick={() => handleClick('grid')}
       >
        <TbLayoutGridRemove />
       </button>
       <button
-        className={`toggle-button ${selectedButton === 'grid' ? 'active' : ''}`}
-        onClick={() => handleClick('grid')}
+
+className={`toggle-button ${selectedButton === 'list' ? 'active' : ''}`}
+onClick={() => handleClick('list')}
+       
       >
      <FaList />
       </button>
